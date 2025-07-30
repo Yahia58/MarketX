@@ -1,0 +1,9 @@
+
+body {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?marketing,technology') no-repeat center center/cover;
+}
