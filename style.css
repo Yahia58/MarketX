@@ -1,9 +1,30 @@
-
 body {
-  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .hero {
+  background-image: url('https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=1600&q=80'); center center/cover no-repeat;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?marketing,technology') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
