@@ -1,0 +1,33 @@
+.animated-gradient {
+  background: linear-gradient(90deg, #ffffff, #9b59b6, #0a0a0a);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 4s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+  
+}
+
+.card:hover {
+  background-color: #dc12ee;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card:hover i,
+.card:hover h4,
+.card:hover p {
+  color: white !important;
+}

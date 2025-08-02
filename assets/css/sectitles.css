@@ -1,0 +1,37 @@
+.heading-style {
+     
+  position: relative ;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background-color: #f3f0f9;
+  color: #dc12ee;
+  padding: 15px 20px;
+  border-left: 6px solid #7e57c2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(126, 87, 194, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  gap: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: auto;
+  
+}
+
+.heading-style i {
+  font-size: 1.8rem;
+  color: #5e35b1;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
