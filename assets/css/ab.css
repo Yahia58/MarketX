@@ -158,11 +158,13 @@ body, h1, h2, h3, p {
   .about-values, .about-images {
     flex-direction: column;
     align-items: center;
+  
   }
 
   .about-hero h1 {
     font-size: 2.2rem;
   }
+  
 }
 /* Team Section */
 .team-section {
