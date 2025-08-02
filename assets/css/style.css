@@ -517,55 +517,12 @@ html[lang="ar"] #lang-Toggle {
   cursor: pointer;
   transition: all 0.3s ease;
 }
- 
-
-/* ########################## Cards*/
-   
-    .card {
-      background-color: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      width: 280px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card i {
-      font-size: 1.8rem;
-      color: #dc12ee;
-      background-color: #e6f0ff;
-      padding: 0.8rem;
-      border-radius: 50%;
-    }
-    .card-content h4 {
-      margin: 0 0 0.3rem 0;
-      font-size: 1.1rem;
-      color: #333;
-      text-align: center;
-    }
-
-    .card-content p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: #666;
-      word-break: break-word;
-    }
- 
- .card:hover i {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/*######################### end Cards*/
-
-
 
 
  body {
       font-family: 'Cairo', sans-serif;
       scroll-behavior: smooth;
-      
+
     }
     .hero {
       background: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7') no-repeat center center/cover;
@@ -641,7 +598,8 @@ html[lang="ar"] #lang-Toggle {
   font-size: 14px;
 }
 
-#home{
+.py-5{
 color: #dc12ee;
 }
+
 

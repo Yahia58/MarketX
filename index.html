@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/beutistyles.css" />
    <link rel="stylesheet" href="assets/css/header.css" />
+   <link rel="stylesheet" href="assets/css/btn.css" />
+   <link rel="stylesheet" href="assets/css/cards.css" />
   
   <link rel="stylesheet" href="assets/css/sectitles.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
@@ -50,9 +52,9 @@
     <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="contact">Contact</a></li>
       </ul>
     </div>
@@ -74,9 +76,9 @@
   <div class="offcanvas-body">
        <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link active" href="index.html" data-i18n="home">Home</a></li>
-      <li class="nav-item"><a class="nav-link " href="about.html" data-i18n="about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="services">Services</a></li>
       <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="projects">Projects</a></li>
+      <li class="nav-item"><a class="nav-link " href="about.html" data-i18n="about">About</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="contact">Contact</a></li>
     </ul>
   </div>
@@ -145,6 +147,9 @@
       </div>
     </div>
   </div>
+  
+  <a href="services.html"><button class="btn btn-primary mt-3 main-btn"  data-aos="flip-up" data-aos-delay="400"  id="main-btn2">  See All Services <i class="fas fa-arrow-right"></i></button></a>
+   
 </section>
 
 
@@ -173,8 +178,8 @@
     </div>
   </div>
 
-  <a href="projects.html"><button class="main-btn">  See Projects <i class="fas fa-arrow-right"></i></button></a>
-
+  <a href="projects.html"><button class="btn btn-primary mt-3 main-btn"  data-aos="fade-up" data-aos-delay="400"  id="main-btn">  See Projects <i class="fas fa-arrow-right"></i></button></a>
+   
 </section>
 
 
@@ -228,13 +233,13 @@
 
  <form id="contact-form" class="row g-3">
   <div class="col-md-6">
-    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
   </div>
   <div class="col-md-6">
-    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
   </div>
   <div class="col-12">
-    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+    <textarea name="message" class="form-control" id="message" rows="4" placeholder="Message" required></textarea>
   </div>
   <div class="col-12 text-center">
     <button class="btn btn-primary mt-2" type="submit" id="send-btn">Send</button>

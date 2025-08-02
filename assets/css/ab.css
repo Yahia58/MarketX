@@ -502,7 +502,7 @@ section h2 {
   font-size: 2.2rem;
   font-weight: 700;
   background-color: #f3f0f9;
-  color: #2d2d2d;
+  color: #ec3bf6;
   padding: 15px 20px;
   border-left: 6px solid #7e57c2;
   border-radius: 8px;
@@ -518,9 +518,11 @@ section h2 {
 
 .heading-style i {
   font-size: 1.8rem;
-  color: #5e35b1;
+  color: #ec3bf6;
 }
-
+.mbd{
+  color: red;
+}
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -531,3 +533,6 @@ section h2 {
     transform: translateY(0);
   }
 }
+
+
+

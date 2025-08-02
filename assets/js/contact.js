@@ -171,7 +171,6 @@
       const el = document.getElementById(id);
       if (el) el.placeholder = text;
     });
-
     document.querySelectorAll('.nav-link').forEach(link => {
       const href = link.getAttribute('href');
       if (href.includes('index.html')) link.textContent = t.home;
@@ -202,6 +201,7 @@
       const lang = btn.dataset.lang;
       localStorage.setItem('lang', lang);
       applyTranslation(lang);
+      
     });
   });
 

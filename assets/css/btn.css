@@ -1,0 +1,40 @@
+
+
+.btn,
+.btn-primary {
+  background: linear-gradient(45deg, #a100ff, #ff0066);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+.main-btn {
+  background-color: #8e44ad;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-left: 41%;
+  margin-right: 41%;
+  width: max-content;
+}
+
+.main-btn:hover {
+  background-color: #6c3483;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
