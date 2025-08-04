@@ -20,7 +20,105 @@
    
   <link rel="stylesheet" href="assets/css/footer.css" />
 
-  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 40px 0 20px;
+      color: #222;
+    }
+
+    .packages-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 1200px;
+      gap: 25px;
+      margin: auto;
+      padding: 0 20px 50px;
+    }
+
+    .package-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+      background-color: #dc12ee;
+      color: white;
+      
+  background-color:  linear-gradient(135deg, #dc12ee 30%, #6a00ff 70%);
+    }
+    .package-card:hover .package-title{
+        color: white;
+    }
+.package-card:hover li::before{
+    color: rgb(255, 255, 255);
+}
+    .package-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #dc12ee;
+      text-align: center;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .feature-list li::before {
+      content: "✔";
+      color: #dc12ee;
+      margin-left: 8px;
+    }
+
+    .package-footer {
+      text-align: center;
+    }
+
+    .btn-primary {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+ 
+    @media (min-width: 900px) {
+      .packages-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+   
    
   <style>
     
@@ -36,8 +134,55 @@
   box-shadow: 20px 10px 20px rgba(234, 12, 208, 0.2);
   border-color: violet; 
   border-width: 3px;
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
     }
+    .card:hover .btn,.card-title{
+      color: white;
+    }
+    .card:hover .card-text{
+      color: white; 
+    }
+    .card:hover i {
+  color: white !important;
+}
+
+    .card:hover h5{
+      color: white;
+    }
+    .btn-primary {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+ 
+    @media (min-width: 900px) {
+      .packages-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    } 
+.btn-primary {
+  background: linear-gradient(45deg, #a100ff, #ff0066);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+} 
   </style>
+  
 </head>
 <body>
 
@@ -111,7 +256,7 @@
             <i class="fab fa-instagram text-danger"></i>
             <h5 class="card-title">إدارة وسائل التواصل</h5>
             <p class="card-text">إدارة صفحات التواصل الاجتماعي وتحقيق التفاعل والنمو الحقيقي.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20إدارة%20وسائل%20التواصل" target="_blank" class="btn btn-outline-danger">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20إدارة%20وسائل%20التواصل" target="_blank" class="btn btn-outline-danger">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -123,7 +268,7 @@
             <i class="fas fa-print text-secondary"></i>
             <h5 class="card-title">خدمات الطباعة</h5>
             <p class="card-text">تصميم وطباعة كروت، بروشورات، رول آب، وغيرها بجودة عالية.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20خدمات%20الطباعة" target="_blank" class="btn btn-outline-secondary">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20خدمات%20الطباعة" target="_blank" class="btn btn-outline-secondary">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -135,7 +280,7 @@
             <i class="fas fa-laptop-code text-primary"></i>
             <h5 class="card-title">تطوير المواقع</h5>
             <p class="card-text">إنشاء مواقع إلكترونية متجاوبة وجاهزة لمحركات البحث.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20تطوير%20المواقع" target="_blank" class="btn btn-outline-primary">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20تطوير%20المواقع" target="_blank" class="btn btn-outline-primary">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -147,7 +292,7 @@
             <i class="fas fa-bullhorn text-warning"></i>
             <h5 class="card-title">الإعلانات والترويج</h5>
             <p class="card-text">تصميم وتنفيذ حملات إعلانية فعّالة لزيادة الوعي بالعلامة التجارية.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20الإعلانات%20والترويج" target="_blank" class="btn btn-outline-warning">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20الإعلانات%20والترويج" target="_blank" class="btn btn-outline-warning">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -159,7 +304,7 @@
             <i class="fas fa-palette text-info"></i>
             <h5 class="card-title">التصميم والهوية</h5>
             <p class="card-text">تصميم الشعارات، الهوية البصرية، البروفايلات، وكل ما يعبر عنك.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصميم%20والهوية" target="_blank" class="btn btn-outline-info">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصميم%20والهوية" target="_blank" class="btn btn-outline-info">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -171,7 +316,7 @@
             <i class="fas fa-chart-line text-success"></i>
             <h5 class="card-title">حلول تسويقية</h5>
             <p class="card-text">خطة تسويقية كاملة تشمل المحتوى، الإعلانات، والتحليل.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20حلول%20تسويقية" target="_blank" class="btn btn-outline-success">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20حلول%20تسويقية" target="_blank" class="btn btn-outline-success">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -183,7 +328,7 @@
             <i class="fas fa-industry text-dark"></i>
             <h5 class="card-title">التصنيع</h5>
             <p class="card-text">خدمة تصنيع وتجهيز منتجاتك من التصميم حتى التسليم.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصنيع" target="_blank" class="btn btn-outline-dark">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصنيع" target="_blank" class="btn btn-outline-dark">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -195,7 +340,7 @@
             <i class="fas fa-tools text-secondary"></i>
             <h5 class="card-title">التركيبات</h5>
             <p class="card-text">تركيب اللوحات، تجهيز المعارض، وتركيب كل أدوات الدعاية.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التركيبات" target="_blank" class="btn btn-outline-secondary">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التركيبات" target="_blank" class="btn btn-outline-secondary">اطلب الخدمة</a>
           </div>
         </div>
       </div>
@@ -207,13 +352,142 @@
             <i class="fas fa-video text-danger"></i>
             <h5 class="card-title">التصوير والمونتاج</h5>
             <p class="card-text">جلسات تصوير ومونتاج احترافية للإعلانات والمحتوى الرقمي.</p>
-            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصوير%20والمونتاج" target="_blank" class="btn btn-outline-danger">استفسر عبر واتساب</a>
+            <a href="https://wa.me/+201122996820?text=Hello,%20I%20would%20like%20to%20inquire%20about%20التصوير%20والمونتاج" target="_blank" class="btn btn-outline-danger">اطلب الخدمة</a>
           </div>
         </div>
       </div>
 
     </div>
   </div>
+
+  
+  <h2 class="section-title">اختر الباقة المناسبة لك</h2>
+
+  <div class="packages-container">
+
+    <!-- باقة 1 -->
+    <div class="package-card">
+      <div class="package-title">موقع بسيط (برمجة مخصصة)</div>
+      <ul class="feature-list">
+        <li>من صفحة إلى أربع صفحات بتصميم بسيط</li>
+        <li>دعم فني لمدة 6 أشهر</li>
+        <li>استضافة خاصة</li>
+        <li>دمج نموذج التواصل</li>
+        <li>تحكم كامل</li>
+        <li>أداء عالي</li>
+        <li>أمان</li>
+        <li>قابلية التوسع</li>
+        <li>بيانات غير محدودة</li>
+      </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+
+    <!-- باقة 2 -->
+    <div class="package-card">
+      <div class="package-title">موقع بسيط (ووردبريس)</div>
+      <ul class="feature-list">
+        <li>من صفحة إلى أربع صفحات بتصميم بسيط</li>
+        <li>دعم فني لمدة 6 أشهر</li>
+        <li>استضافة خاصة</li>
+        <li>دمج نموذج التواصل</li>
+        <li>تحكم كامل</li>
+        <li>أداء عالي</li>
+        <li>أمان</li>
+        <li>قابلية التوسع</li>
+        <li>بيانات غير محدودة</li>
+      </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+
+    <!-- باقة 3 -->
+    <div class="package-card">
+      <div class="package-title">متجر إلكتروني (برمجة مخصصة)</div>
+      <ul class="feature-list">
+        <li>دمج مع أنظمة المخزون والشحن</li>
+        <li>وظائف متقدمة (حسابات – تحليلات – عروض)</li>
+        <li>دعم متعدد اللغات والعملات</li>
+        <li>دمج بوابات الدفع</li>
+        <li>استضافة خاصة</li>
+        <li>دمج نموذج التواصل</li>
+        <li>تحكم كامل</li>
+        <li>أداء عالي</li>
+        <li>أمان</li>
+        <li>قابلية التوسع</li>
+        <li>بيانات غير محدودة</li>
+      </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+
+    <!-- باقة 4 -->
+    <div class="package-card">
+      <div class="package-title"> متجر الكتروني (ووردبريس)  </div>
+      <ul class="feature-list">
+        <li>خطة تسويق مخصصة لكل مرحلة من مراحل النمو</li>
+        <li>إعلانات ممولة (سوشيال – جوجل)</li>
+        <li>تحسين محركات البحث (SEO)</li>
+        <li>إدارة الحملات الدعائية</li>
+        <li>تحليل بيانات الأداء وتقديم التقارير</li>
+        <li>تصميم هوية بصرية</li>
+        <li>إدارة حسابات التواصل الاجتماعي</li>
+        <li>استراتيجيات محتوى فعّالة</li>
+        <li>استشارات تسويقية شهرية</li>
+      </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+
+    
+    <!-- باقة 5 -->
+    <div class="package-card">
+      <div class="package-title">منصة تعليمية (برمجة مخصصة)</div>
+      <ul class="feature-list">
+<li>منصة تفاعلية مع لوحات تحكم</li>
+        <li>إدارة الطلاب والمعلمين</li>
+        <li>دروس مباشرة – اختبارات – إشعارات</li>
+        <li>دمج أدوات مثل Zoom</li>
+        <li>تطبيق موبايل مخصص</li>
+        <li>استضافة خاصة</li>
+        <li>دمج نموذج التواصل</li>
+        <li>تحكم كامل</li>
+        <li>أداء عالي</li>
+        <li>أمان</li>
+        <li>قابلية التوسع</li>
+        <li>بيانات غير محدودة</li>
+          </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+    
+    <!-- باقة 4 -->
+    <div class="package-card">
+      <div class="package-title">منصة تعليمية (ووردبريس)</div>
+      <ul class="feature-list">
+<li>تسجيل الطلاب والمعلمين</li>
+        <li>عرض الدورات وإدارة المحتوى</li>
+        <li>اختبارات بسيطة – لوحة تحكم للإدارة</li>
+        <li>استضافة خاصة</li>
+        <li>دمج نموذج التواصل</li>
+        <li>تحكم كامل</li>
+        <li>أداء عالي</li>
+        <li>أمان</li>
+        <li>قابلية التوسع</li>
+        <li>بيانات غير محدودة</li>
+          </ul>
+      <div class="package-footer">
+        <button class="btn-primary">اختر الباقة</button>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 
