@@ -615,9 +615,7 @@ color: #dc12ee;
 body {
     font-family: 'Cairo', sans-serif;
 }
-* {
-    font-family: 'Cairo', sans-serif !important;
-}
+
 .vision-mission{
 color: #dc12ee !important;
 }
