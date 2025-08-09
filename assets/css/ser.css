@@ -1,0 +1,162 @@
+  body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 40px 0 20px;
+      color: #222;
+    }
+
+    .packages-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 1200px;
+      gap: 25px;
+      margin: auto;
+      padding: 0 20px 50px;
+    }
+
+    .package-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      transition: transform 0.3s;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);    
+      background-color:  linear-gradient(135deg, #dc12ee 30%, #6a00ff 70%);
+      color: white;
+      
+       transform: scale(1.03);
+  box-shadow: 20px 10px 20px rgba(234, 12, 208, 0.2);
+  border-color: violet; 
+  border-width: 3px;
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+    }
+    .package-card:hover .package-title{
+        color: white;
+    }
+.package-card:hover li::before{
+     color: white !important;
+}
+    .package-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #dc12ee;
+      text-align: center;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+    }
+
+    .feature-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .feature-list li::before {
+      content: "✔";
+      color: #dc12ee;
+      margin-left: 8px;
+    }
+
+    .package-footer {
+      text-align: center;
+    }
+
+    .btn-primary {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+ 
+    @media (min-width: 900px) {
+      .packages-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+ 
+    .card i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color:white
+    }
+    .card-title {
+      font-weight: bold;
+    }
+    .card:hover{
+       transform: scale(1.03);
+  box-shadow: 20px 10px 20px rgba(234, 12, 208, 0.2);
+  border-color: violet; 
+  border-width: 3px;
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+    }
+    .card:hover .btn,.card-title{
+      color: white;
+    }
+    .card:hover .card-text{
+      color: white; 
+    }
+    .card:hover i {
+  color: white !important;
+}
+
+    .card:hover h5{
+      color: white;
+    }
+    .btn-primary {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+ 
+    @media (min-width: 900px) {
+      .packages-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    } 
+.btn-primary {
+  background: linear-gradient(45deg, #a100ff, #ff0066);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+} 
+
+  

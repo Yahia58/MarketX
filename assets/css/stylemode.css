@@ -1,0 +1,147 @@
+/* الوضع النهاري */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#mode-toggle {
+  position: fixed;
+  top: 1%;
+  
+  font-size: 26px;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #121212;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode #mode-toggle {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .card{
+  background-color: black !important;
+  
+}
+body.dark-mode .card-text{
+  color: white;
+}
+
+body.dark-mode .card-title{
+  color: white;
+}
+
+body.dark-mode .service{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+body.dark-mode .package-card{
+  background-color: black;
+  color: white;
+}
+
+
+body.dark-mode .package-title{ 
+  color: white;
+}
+ 
+
+
+body.dark-mode .section-title{ 
+  color: white;
+}
+ 
+
+
+body.dark-mode .service-card{
+  background-color: black;
+  color: white;
+}
+
+ 
+body.dark-mode .service-card:hover{
+  
+  background: linear-gradient(45deg, #7c00cc, #cc0055);
+  color: white;
+}
+
+ body.dark-mode .card{
+border-color: #7c00cc;
+ }
+ body.dark-mode .card:hover{
+ /*background:  linear-gradient(135deg, #dc12ee 30%, #6a00ff 70%);*/
+ background: linear-gradient(45deg, #7c00cc, #cc0055);
+  color: white !important;
+}
+
+body.dark-mode .card:hover .contact-icon{ 
+ background-color: rgb(220, 128, 194);
+}
+
+ body.dark-mode .card-content h4{ 
+  color: rgb(255, 255, 255);
+}
+  
+ body.dark-mode .card-content p{ 
+  color: rgb(255, 255, 255);
+}
+ body.dark-mode .contact-icon{ 
+ background-color: rgb(254, 254, 254);
+}
+
+
+body.dark-mode #contact-form{ 
+ background-color: rgb(7, 7, 7);
+ border-color: #7c00cc;
+}
+body.dark-mode #contact-form{ 
+ 
+ border-color: #7c00cc !important;
+border-style:solid;
+}
+
+
+body.dark-mode #contact-form .form-control{ 
+ background-color: rgb(7, 7, 7);
+ 
+}
+body.dark-mode #contact-form .form-control::placeholder{ 
+ color: rgb(255, 255, 255);
+ 
+}
+body.dark-mode #contact-form .form-control{ 
+ color: rgb(255, 255, 255);
+ 
+}
+
+body.dark-mode #contact-form:hover{ 
+background: linear-gradient(45deg, #7c00cc, #f8267d);
+}
+
+body.dark-mode .rodark{background: rgb(38, 38, 38) !important;}
+body.dark-mode .intro{background: rgb(32, 32, 37) !important;}
+
+
+
+body.dark-mode .vision-mission{
+
+color: #dc12ee !important;}
+
+/*body.dark-mode */

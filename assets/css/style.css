@@ -602,4 +602,32 @@ html[lang="ar"] #lang-Toggle {
 color: #dc12ee;
 }
 
+  #contact-form{
+    margin-left: 10%;
+    margin-right: 10%;
+    border: white;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+  }
 
+  /* تطبيق خط Cairo على كل الموقع */
+body {
+    font-family: 'Cairo', sans-serif;
+}
+* {
+    font-family: 'Cairo', sans-serif !important;
+}
+.vision-mission{
+color: #dc12ee !important;
+}
+.vision-mission h3{
+  
+color: #dc12ee !important;
+
+}
+.vision-mission .column:hover h3{
+  
+color: white !important;
+
+}
