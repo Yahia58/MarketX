@@ -8,9 +8,9 @@ body {
 #mode-toggle {
   position: fixed;
   top: 1%;
-  
-  font-size: 26px;
-  padding: 20px;
+  margin-left:5px ;
+  font-size: 20px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 50%;
   background-color: #121212;
@@ -145,3 +145,4 @@ body.dark-mode .vision-mission{
 color: #dc12ee !important;}
 
 /*body.dark-mode */
+ 
